@@ -24,7 +24,7 @@ public class AngularController {
 	
 	@GetMapping("/index")
 	public String get(){
-		return "indiaaa";
+		return "india";
 	}
 	
 	
