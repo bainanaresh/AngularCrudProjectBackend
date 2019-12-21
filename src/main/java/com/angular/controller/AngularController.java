@@ -1,6 +1,7 @@
 package com.angular.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -41,6 +42,11 @@ public class AngularController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteUser(@PathVariable("id") int id) {
 		return service.deleteUser(id);
+	}
+	
+	@GetMapping("/user/id/{id}")
+	public Optional<User> findUserById(@PathVariable("id") int id) {
+		return service.getUserById(id);
 	}
 
 }

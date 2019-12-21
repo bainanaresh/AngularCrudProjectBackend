@@ -1,6 +1,7 @@
 package com.angular.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -34,6 +35,10 @@ public class UserService {
 	public String deleteUser(int id) {
 		repo.deleteById(id);
 		return "Record Deleted Successfully";
+	}
+	
+	public Optional<User> getUserById(int id) {
+		return repo.findById(id);
 	}
 
 }
