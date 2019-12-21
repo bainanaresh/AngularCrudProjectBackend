@@ -38,6 +38,7 @@ public class UserService {
 	}
 	
 	public Optional<User> getUserById(int id) {
+		System.out.println("*********");
 		return repo.findById(id);
 	}
 
