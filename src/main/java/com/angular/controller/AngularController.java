@@ -23,15 +23,11 @@ public class AngularController {
 	@Autowired
 	private UserService service;
 	
-	@GetMapping("/index")
+
+	@RequestMapping("/index")
 	public String get() {
-		return "index";
+		return "india";
 	}
-	
-	@RequestMapping("/index")	
-	public String get1() {	
-		return "india";	
-	}	
 	
 
 	
