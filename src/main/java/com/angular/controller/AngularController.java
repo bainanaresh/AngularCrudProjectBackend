@@ -28,6 +28,11 @@ public class AngularController {
 	}
 	
 	
+	@GetMapping("/index")
+	public String getIndex(){
+		return "index";
+	}
+	
 	@GetMapping("/users")
 	public List<User> getAllUsers(){
 		return service.getUsers();
