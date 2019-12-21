@@ -22,6 +22,10 @@ public class AngularController {
 	@Autowired
 	private UserService service;
 	
+	@GetMapping("/index")
+	public String get() {
+		return "index";
+	}
 
 	
 	@GetMapping("/users")
