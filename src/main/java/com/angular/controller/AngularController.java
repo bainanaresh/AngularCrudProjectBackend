@@ -22,16 +22,7 @@ public class AngularController {
 	@Autowired
 	private UserService service;
 	
-	@GetMapping("/index")
-	public String get(){
-		return "india";
-	}
-	
-	
-	@GetMapping("/index")
-	public String getIndex(){
-		return "index";
-	}
+
 	
 	@GetMapping("/users")
 	public List<User> getAllUsers(){
